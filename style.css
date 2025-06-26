@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-section,
+.todo-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #2a9d8f;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #264653;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1b2d38;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #e9ecef;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #264653;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
